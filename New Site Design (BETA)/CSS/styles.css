@@ -1,0 +1,38 @@
+.grad1 {
+    background: linear-gradient(to left, rgba(255, 187, 0, 0.911), rgb(255, 27, 27));
+    border-radius: 2%;
+    text-shadow:
+    -.02em -.02em 0 rgba(0, 0, 0, 0),
+    .02em -.02em 0 rgba(0, 0, 0, 0),
+    -.02em .02em 0 #2E2E2E,
+    .002em .003em 0 rgba(0, 0, 0, 0.082);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text {
+    color:rgb(73, 237, 243) !important;
+}
+.text:hover { 
+    color: rgb(0, 250, 175) !important; 
+    border-radius: 90%;
+}
+* {
+    font-family: 'Lexend Deca', sans-serif;
+  }
+  .grad2 {
+    background: linear-gradient(to left, rgba(0, 183, 255, 0.911), rgb(27, 255, 84));
+    border-radius: 2%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.grad3 {
+    background: linear-gradient(to left, rgba(183, 0, 255, 0.911), rgb(245, 180, 0));
+    border-radius: 40%;
+    font-size:4em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card-img-top {
+    overflow: hidden !important;
+
+}
