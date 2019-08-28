@@ -1,20 +1,8 @@
 console.log("INIT");
 
 
-$(function() {
-    $(window).scroll(function() {
-       // console.log('scrolling ', $(window).scrollTop(), $(document).height());
-        if($(window).scrollTop() >= 200 && $(window).scrollTop() <= ($(document).height() - 500)) {
-            $('#mainNav').removeClass('hide');
-        } else {
-            $('#mainNav').addClass('hide');
-        }
-    });
-});
 
-
-//document.getElementById('us').scrollIntoView({block: 'start', behavior: 'smooth'});
-
+//Scrolling Jquery Function
 (function($) {
     "use strict"; // Start of use strict
   
