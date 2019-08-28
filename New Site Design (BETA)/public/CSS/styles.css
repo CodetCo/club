@@ -1,4 +1,13 @@
-.grad1 {
+
+
+* {
+    font-family: 'Lexend Deca', sans-serif;
+    
+  }
+  
+  
+  
+  .grad1 {
     background: linear-gradient(to left, rgba(255, 187, 0, 0.911), rgb(255, 27, 27));
     border-radius: 2%;
     text-shadow:
@@ -16,9 +25,7 @@
 .text:hover { 
     color: rgb(0, 250, 175) !important; 
 }
-* {
-    font-family: 'Lexend Deca', sans-serif;
-  }
+
   .grad2 {
     background: linear-gradient(to left, rgba(0, 183, 255, 0.911), rgb(27, 255, 84));
     border-radius: 2%;
