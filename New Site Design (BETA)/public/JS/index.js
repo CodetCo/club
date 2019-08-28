@@ -35,7 +35,7 @@ console.log("INIT");
       $('.navbar-collapse').collapse('hide');
     });
   
-    // Activate scrollspy to add active class to navbar items on scroll
+    // Activate scrollspy to add active class to navbar items on scroll BETA
     $('body').scrollspy({
       target: '#mainNav',
       offset: 80
@@ -49,12 +49,6 @@ console.log("INIT");
         $("#mainNav").removeClass("navbar-shrink");
       }
     };
-    // Collapse now if page is not at top
-    navbarCollapse();
-    // Collapse the navbar when page is scrolled
-    $(window).scroll(navbarCollapse);
-  
-    // Floating label headings for the contact form
-  
+    
   })(jQuery); // End of use strict
   
