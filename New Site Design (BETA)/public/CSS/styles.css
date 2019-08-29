@@ -92,3 +92,15 @@
     width:0 !important;
     height:0 !important;
 }
+
+#head {
+    height: 95vh;
+}
+
+#arrow-btn {
+    transition: 0.3s all;
+}
+
+#arrow-btn:hover {
+    transform: scale(1.2);
+}
