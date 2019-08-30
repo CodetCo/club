@@ -103,7 +103,7 @@
 
 #head {
     padding-top: 13vh;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #arrow-btn {
@@ -129,4 +129,8 @@
 
 .lighter-orange {
     color: rgb(255, 204, 74);
+}
+
+.card {
+    min-width: 200px;
 }
