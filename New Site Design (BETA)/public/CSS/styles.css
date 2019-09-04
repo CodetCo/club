@@ -9,7 +9,13 @@
     outline:none !important;
 }
   
-  
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    color: rgb(194, 194, 194);
+    
+  }
+.table td, .table-hover tbody th{
+    font-size: 2.5vh;
+}
   .grad1 {
     background: linear-gradient(to left, rgba(255, 187, 0, 0.911), rgb(255, 27, 27));
     border-radius: 2%;
