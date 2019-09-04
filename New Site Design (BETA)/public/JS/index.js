@@ -52,4 +52,39 @@ console.log("INIT");
     };
     
   })(jQuery); // End of use strict
+
+
+//Load the Sheet and Fill the Contact Info
+  var members;
+  function successFunc(data) {
+    members=data;
+    console.log(data)
+    let body = document.getElementById("memberBody");
+    for (let i=0;i<members.length;i++) {
+      let newPerson=document.createElement('tr');
+      let scope=document.createElement('th');
+      scope.scope="row";
+      scope.innerHTML=i+1;
+      let newName=members[i]["Full Name:"];
+      let newGrade=members[i]["Grade:"];
+      let newEmail=members[i]["Email:"];
+      let finalName=document.createElement('td');
+      let finalGrade=document.createElement('td');
+      let finalEmail=document.createElement('td');
+      finalName.innerHTML=newName.replace(">","").replace("<","");
+      finalGrade.innerHTML=newGrade.replace(">","").replace("<","");
+      finalEmail.innerHTML="<a style=\"color:white\"class=\"link\" href=\"mailto:"+ newEmail.replace(">","").replace("<","") + "\">" + newEmail.replace(">","").replace("<","") + "</a>";
+      newPerson.appendChild(scope);
+      newPerson.appendChild(finalName);
+      newPerson.appendChild(finalGrade);
+      newPerson.appendChild(finalEmail);
+      console.log(newPerson);
+      body.appendChild(newPerson);
+    }
+  }
   
+  Sheetsu.read(
+    "https://sheetsu.com/apis/v1.0su/6999b20703d8",
+    {},
+    successFunc
+  );
