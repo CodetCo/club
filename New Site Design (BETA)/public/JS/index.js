@@ -78,7 +78,6 @@ console.log("INIT");
       newPerson.appendChild(finalName);
       newPerson.appendChild(finalGrade);
       newPerson.appendChild(finalEmail);
-      console.log(newPerson);
       body.appendChild(newPerson);
     }
   }
