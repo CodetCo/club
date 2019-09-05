@@ -65,14 +65,14 @@ console.log("INIT");
       let scope=document.createElement('th');
       scope.scope="row";
       scope.innerHTML=i+1;
-      let newName=members[i]["Full Name:"];
-      let newGrade=members[i]["Grade:"];
-      let newEmail=members[i]["Email:"];
+      let newName=members[i]["fullName:"];
+      let newGrade=members[i]["grade:"];
+      let newEmail=members[i]["email:"];
       let finalName=document.createElement('td');
       let finalGrade=document.createElement('td');
       let finalEmail=document.createElement('td');
-      finalName.innerHTML=newName.replace(">","").replace("<","");
-      finalGrade.innerHTML=newGrade.replace(">","").replace("<","");
+      finalName.innerHTML=newName;
+      finalGrade.innerHTML=newGrade;
       finalEmail.innerHTML="<a style=\"color:white\"class=\"link\" href=\"mailto:"+ newEmail.replace(">","").replace("<","") + "\">" + newEmail.replace(">","").replace("<","") + "</a>";
       newPerson.appendChild(scope);
       newPerson.appendChild(finalName);
@@ -82,9 +82,6 @@ console.log("INIT");
       body.appendChild(newPerson);
     }
   }
-  
-  Sheetsu.read(
-    "https://sheetsu.com/apis/v1.0su/6999b20703d8",
-    {},
-    successFunc
-  );
+  $.getJSON('https://api.sheety.co/5eff99a2-d153-4dbd-826c-fe0b0e3b0d36', function(data) {
+		successFunc(data);
+	})
