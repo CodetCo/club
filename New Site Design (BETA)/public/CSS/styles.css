@@ -1,3 +1,10 @@
+::selection {
+    background: #ffce74; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #ffce74; /* Gecko Browsers */
+  }
+
 .navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;outline:none;}
 .navbar {min-height:10px !important}
 .navbar-brand {outline:none;!important}
